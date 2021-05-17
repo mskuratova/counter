@@ -1,16 +1,25 @@
 .App {
-    width: 170px;
-    margin: 200px auto;
+    width: 500px;
+    margin: 250px auto;
     padding: 6px;
     display: grid;
     grid-template-areas:
-    "c c"
-    "i r";
-    grid-auto-rows: 60px 60px;
-    grid-auto-columns: 80px 80px;
-    grid-gap: 10px;
+    "k k c c"
+    "s s i r";
+    grid-auto-rows: 88px 88px 88px 88px;
+    grid-auto-columns: 100px 100px 100px 100px;
+    grid-gap: 30px;
     background-color: darkslategray;
 }
+
+.Value {
+    background-color: aqua;
+    grid-area: k;
+    text-align: right;
+    display: flex;
+
+}
+
 
 .Counter {
     background-color: aqua;
@@ -23,6 +32,16 @@
     grid-area: c;
     text-align: center;
     color: red;
+}
+
+.set {
+    background-color: aqua;
+    grid-area: s;
+}
+.setError {
+    background-color: aqua;
+    grid-area: s;
+    opacity: 0.5;
 }
 
 .inc {
